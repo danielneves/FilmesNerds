@@ -1,0 +1,34 @@
+:root{
+    --main-color: #FFFBF0;
+    --main-color1: #0E0E0E;
+    --primary-color1: #A7BA9C;
+    --dark-color:#21251F;
+    --secondary-color1: #FFFBF0;
+    --secondary-color2: #FFF3CA;
+    --secondary-color3: #FAAE54;
+    --main-text: #0E0E0E;
+}
+
+
+body{
+    background-color: var(--main-color);
+    font: var(--main-text);
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+.character{
+    background-color: var(--primary-color1);
+}
+#quote{
+    background-color: white;
+}
+
+
+img{
+    border-radius: 5px;
+}
+
+footer{
+    background: var(--dark-color);
+    font: var(--main-color);
+}
