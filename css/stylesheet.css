@@ -9,26 +9,8 @@
     --main-text: #0E0E0E;
 }
 
-
-body{
-    background-color: var(--main-color);
-    font: var(--main-text);
-    font-family: "Kantumruy Pro", sans-serif;
-}
-
-.character{
-    background-color: var(--primary-color1);
-}
-#quote{
-    background-color: white;
-}
-
-
-img{
-    border-radius: 5px;
-}
-
+l
 footer{
     background: var(--dark-color);
-    font: var(--main-color);
+or    co: var(--main-color);
 }
