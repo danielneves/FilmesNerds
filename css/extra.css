@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.rodape1 {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 200px;
+    float: inline-start;
+    color: #FFF3CA;
+    background-color: #21251F;
+}
+
+.rodape1 img {
+    /* border: 2px solid blue; */
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+
+.rodape1 ul {
+    /* border: 2px solid blue; */
+    margin-top: 60px;
+    list-style-type: none;
+    direction: rtl;
+    margin-right: 50px;
+}
+
+
+.rodape2 {
+    /* border: 2px solid blue; */
+    padding: 50px;
+    color: #FFF3CA;
+    background-color: #21251F;
+    width: 100%;
+    float: inline;
+
+}
