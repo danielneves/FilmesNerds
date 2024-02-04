@@ -6,6 +6,66 @@ body {
     margin: 0;
 }
 
+.menu {
+    /* border: 2px solid red; */
+    background-color: #FFFBF0;
+    align-items: center;
+    gap: 118px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    overflow: hidden;
+    
+}
+
+a {
+    /* border: 2px solid red; */
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #A7BA9C;
+}
+
+.extras {
+    border: 2px solid red;
+    background-color: #F5F5F5;
+    width: 33.33%;
+    height: 600px;
+    float: inline-start;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.galeriaTitulo {
+    /* border: 2px solid red; */
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 200px;
+    padding: 24px;
+    overflow: hidden;
+
+}
+
+.galeria {
+    /* border: 2px solid red; */
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 450px;
+    padding: 24px;
+    display: flex;
+    float: inline-start;
+    justify-content:flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+.galeria img {
+    margin-right: 10px;
+}
+
+
 .rodape1 {
     /* border: 2px solid red; */
     width: 50%;
