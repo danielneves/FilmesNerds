@@ -1,114 +1,115 @@
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
 }
 
-.menu {
-    /* border: 2px solid red; */
-    background-color: #FFFBF0;
-    align-items: center;
-    gap: 118px;
+.navbar {
     display: flex;
     justify-content: center;
-    padding: 15px;
-    overflow: hidden;
-    
+    align-items: center;
+    background-color: #FFFBF0;
+    height: 220px;
 }
 
-a {
-    /* border: 2px solid red; */
+.navbar a {
     color: black;
+    padding: 30px 80px;
     text-decoration: none;
 }
 
-a:visited {
+.navbar a:visited{
     color: #A7BA9C;
 }
 
-.intro {
-    border: 2px solid blue;
-    width: 50%;
+
+.background {
     height: 600px;
-    padding: 24px;
-    float:left;
+    background: url(/FilmesNerds/img_index/extra/cover.jpeg) no-repeat center;
+    background-size: cover;
 }
 
-
-.extras {
-    border: 2px solid red;
-    width: 30%;
-    border-radius: 30px;
-    height: 500px;
-    float: inline-start;
-    margin-left: 25px;
-    margin-right: 20px;
-    padding: 24px;
-    overflow: auto;
+.texto1 {
+    height: 400px;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
 }
 
+.extra {
+    background-color: #A7BA9C;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.galeriaTitulo {
-    /* border: 2px solid red; */
-    /* background-color: #F5F5F5; */
+.extra div img {
     width: 100%;
-    height: 200px;
-    padding: 24px;
-    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.extra div {
+    background-color: white;
+    height: 500px;
+    width: 380px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.extra p {
+    margin-bottom: 50px;
+}
+.botao {
+    background-color: #A7BA9C;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px;
+    border-radius: 10px;
 
 }
 
 .galeria {
-    /* border: 2px solid red; */
-    background-color: #F5F5F5;
-    width: 100%;
-    height: 450px;
-    padding: 24px;
+    height: 300px;
+    padding: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.imagens {
+    height: 500px;
     display: flex;
-    float: inline-start;
-    justify-content:flex-start;
-    align-items: center;
-    overflow: auto;
+    align-items:first baseline;
+    overflow: scroll;
 }
 
-.galeria img {
-    margin-right: 10px;
+.imagens img {
+    margin-right: 15px;
 }
 
-
-.rodape1 {
-    /* border: 2px solid red; */
-    width: 50%;
-    height: 200px;
-    float: inline-start;
-    color: #FFF3CA;
+.rodape {
     background-color: #21251F;
-}
-
-.rodape1 img {
-    /* border: 2px solid blue; */
-    margin-top: 20px;
-    margin-left: 50px;
-    
-}
-
-.rodape1 ul {
-    /* border: 2px solid blue; */
-    margin-top: 60px;
-    list-style-type: none;
-    direction: rtl;
-    margin-right: 50px;
-}
-
-
-.rodape2 {
-    /* border: 2px solid blue; */
+    height: 400px;
     padding: 50px;
-    color: #FFF3CA;
+}
+.container {
+    display: flex;
     background-color: #21251F;
-    width: 100%;
-    float: inline;
+}
 
+.logo, .lista {
+    width: 50%;
+}
+
+.lista {
+    direction: rtl;
+    color: #FFF3CA;
+}
+
+.rights {
+    background-color: #21251F;
+    color: #FFF3CA;
 }
