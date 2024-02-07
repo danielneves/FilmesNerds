@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+
 body {
     margin: 0;
 }
@@ -11,19 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FFFBF0;
-    height: 220px;
+    height: 200px;
 }
 
 .navbar a {
     color: black;
     padding: 30px 80px;
     text-decoration: none;
+    font-family: 'KoHo', sans-serif;
 }
 
 .navbar a:visited{
     color: #A7BA9C;
 }
-
 
 .background {
     height: 600px;
@@ -39,7 +41,7 @@ body {
 }
 
 .extra {
-    background-color: #A7BA9C;
+    background: linear-gradient(#FFFBF0, #A7BA9C,  #aabea2);
     height: 700px;
     display: flex;
     flex-direction: row;
@@ -47,12 +49,17 @@ body {
     align-items: center;
 }
 
+.extra div h3 {
+    font-family: 'KoHo', sans-serif;;
+}
+
 .extra div img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
+
 .extra div {
-    background-color: white;
+    background: #FFFFFF;
     height: 500px;
     width: 380px;
     padding: 20px;
@@ -62,16 +69,17 @@ body {
 .extra p {
     margin-bottom: 50px;
 }
+
 .botao {
-    background-color: #A7BA9C;
+    background-color: #21251F;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px 50px;
     border-radius: 10px;
-
+    font-weight: bold;
 }
 
-.galeria {
+.texto2 {
     height: 300px;
     padding: 80px;
     text-align: center;
@@ -95,6 +103,7 @@ body {
     height: 400px;
     padding: 50px;
 }
+
 .container {
     display: flex;
     background-color: #21251F;
@@ -105,11 +114,17 @@ body {
 }
 
 .lista {
+    font-family: 'KoHo', sans-serif;
     direction: rtl;
     color: #FFF3CA;
 }
 
+.lista ul li {
+    padding: 10px;
+}
+
 .rights {
+    font-family: 'KoHo', sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
 }
