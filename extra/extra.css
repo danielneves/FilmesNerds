@@ -41,7 +41,7 @@ body {
 }
 
 .extra {
-    background: linear-gradient(#FFFBF0, #A7BA9C,  #aabea2);
+    background-color: #FFF3CA;
     height: 700px;
     display: flex;
     flex-direction: row;
@@ -71,9 +71,9 @@ body {
 }
 
 .botao {
-    background-color: #21251F;
+    background-color: #A7BA9C;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px 50px;
     border-radius: 10px;
     font-weight: bold;
