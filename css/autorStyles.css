@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 400px;
+  padding: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffbf0;
+  height: 200px;
+}
+
+.navbar a {
+  color: black;
+  padding: 30px 80px;
+  text-decoration: none;
+  font-family: "KoHo", sans-serif;
+}
+
+.navbar a:visited {
+  color: #a7ba9c;
+}
+
+section {
+  margin: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.rodape {
+  background-color: #21251f;
+  height: 400px;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  background-color: #21251f;
+}
+
+.logo,
+.lista {
+  width: 50%;
+}
+
+.lista {
+  font-family: "KoHo", sans-serif;
+  direction: rtl;
+  color: #fff3ca;
+}
+
+.lista ul li {
+  padding: 10px;
+}
+
+.rights {
+  font-family: "KoHo", sans-serif;
+  background-color: #21251f;
+  color: #fff3ca;
+}
