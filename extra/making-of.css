@@ -29,7 +29,8 @@ body {
 
 .background {
     height: 500px;
-    background: url(/FilmesNerds/img_index/extra/background-mapas.jpeg) no-repeat center;
+    background: url(/FilmesNerds/img_index/extra/background-making-of.jpeg) no-repeat center;
+    
     background-size: cover;
 }
 
@@ -40,29 +41,25 @@ body {
     font-size: 18px;
 }
 
-section {
+.extra {
+    background-color: #aabea2;
     height: 600px;
-}
-
-.mapas1 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 80px;
-    background-color: #FFFBF0;
 }
 
-.mapas1 img {
-    margin-right: 50px;
+.extra div h2 {
+    font-family: 'KoHo', sans-serif;;
 }
 
-.mapas2 {
-    display: flex;
-    align-items: center;
-    padding: 80px;
-}
-
-.mapas2 img {
-    margin-left: 50px;
+.extra div {
+    background: #FFFFFF;
+    height: 450px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .rodape {

@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre o autor</title>
+    <link rel="stylesheet" href="css/autorStyles.css">
   </head>
 
   <body>
-    <nav>
-      <img src="img_index/logo.png" alt="logo" />
-      <a href="index.html">Página inicial</a>
-      <a href="autor.html">Autor</a>
-      <a href="personagens.html">Personagens</a>
-      <a href="Livros/livros.html">Livros</a>
-      <a href="extra.html">Extras</a>
+    <nav class="navbar">
+      <a href="#">
+        <img src="/img_index/logo.svg" width="100px" alt="Logo">
+    </a>
+      <a class="navbotao" href="index.html">Página inicial</a>
+      <a class="navbotao" href="autor.html">Autor</a>
+      <a class="navbotao" href="personagens.html">Personagens</a>
+      <a class="navbotao" href="Livros/livros.html">Livros</a>
+      <a class="navbotao" href="extra.html">Extras</a>
     </nav>
 
     <section>
       <img
         src="img_index/autor/autor1.svg"
         alt="Imagem de J.R.R. Tolkien"
-        width="500"
+        width="100%"
       />
       <h1>J.R.R. TOLKIEN</h1>
       <p>
@@ -59,18 +62,26 @@
       />
       <img src="img_index/autor/autor5.jpg" alt="Foto do Tolkien" width="100" />
     </section>
-    <footer>
-      <img src="img_index/logo.png" alt="logo" />
-      <ul>
-        <li>Alexandre</li>
-        <li>Ana Diulia</li>
-        <li>Gabrielle</li>
-        <li>Daniel Neves</li>
-        <li>Natália Maglio</li>
-      </ul>
-      <hr />
-      <p>&copy; 2024</p>
-      <p>PROJETO DE CONCLUSÃO DO CURSO DE HTML+CSS // CODERHOUSE</p>
-    </footer>
+    <footer class="rodape">
+      <div class="container">
+          <div class="logo">
+              <img src="/img_index/logo2.png" alt="Logo">
+          </div>
+          <div class="lista">
+              <ul style="list-style-type: none;">
+                  <li>ALEXANDRE</li>
+                  <li>ANA DIULIA</li>
+                  <li>GABRIELLE</li>
+                  <li>DANIEL NEVES</li>
+                  <li>NATÁLIA MÁLGIO</li>
+              </ul>
+          </div>
+      </div>
+      <div class="rights">
+          <hr>
+          <p>&copy; 2024 </p>
+          <p> Projeto de conclusão do curso de HTML e CSS da Coderhouse</p>
+      </div>
+  </footer>
   </body>
 </html>
