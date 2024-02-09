@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBF0;
+    height: 200px;
+}
+
+.navbar a {
+    color: black;
+    padding: 30px 80px;
+    text-decoration: none;
+    font-family: 'KoHo', sans-serif;
+}
+
+.navbar a:visited{
+    color: #A7BA9C;
+}
+
+.background {
+    height: 600px;
+    background: url(/FilmesNerds/img_index/extra/background-trilha.png) no-repeat center;
+    background-size: cover;
+}
+
+.header {
+    height: 400px;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    height: 600px;
+    background-color: #FFFBF0;
+}
+
+.sobre img {
+    margin-right: 50px;
+}
+
+.trilhas1, .trilhas2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+
+}
+
+.trilhas1 a, .trilhas2 a {
+    padding: 40px;
+}
+
+.trilhas2 {
+    background-color: #FFFBF0;
+}
+
+.playlists {
+    height: 200px;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.rodape {
+    background-color: #21251F;
+    height: 400px;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    background-color: #21251F;
+}
+
+.logo, .lista {
+    width: 50%;
+}
+
+.lista {
+    font-family: 'KoHo', sans-serif;
+    direction: rtl;
+    color: #FFF3CA;
+}
+
+.lista ul li {
+    padding: 10px;
+}
+
+.rights {
+    font-family: 'KoHo', sans-serif;
+    background-color: #21251F;
+    color: #FFF3CA;
+}
