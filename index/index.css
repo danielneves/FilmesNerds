@@ -1,0 +1,111 @@
+body {
+margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBF0;
+    height: 200px;
+}
+
+.navbar a {
+    color: black;
+    padding: 30px 80px;
+    text-decoration: none;
+    font-family: 'KoHo', sans-serif;
+}
+
+.navbar a:visited{
+    color: #A7BA9C;
+}
+
+.header {
+    height: 600px;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.main {
+    background-color: white;
+}
+
+.h1 {
+    font-family: 'KoHo', sans-serif;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: 'KoHo', sans-serif;
+    font-size: 18px;
+    color: black;
+    max-width: 80ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.botao {
+    background-color: #A7BA9C;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 220px;
+    height: 60px;
+    margin: 40px;
+    cursor: pointer;
+    font-family: 'KoHo', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.h2 {
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.imagem {
+    width: 480px;
+    height: 290px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rodape {
+    background-color: #21251F;
+    height: 400px;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    background-color: #21251F;
+}
+
+.logo, .lista {
+    width: 50%;
+}
+
+.lista {
+    font-family: 'KoHo', sans-serif;
+    direction: rtl;
+    color: #FFF3CA;
+}
+
+.lista ul li {
+    padding: 10px;
+}
+
+.rights {
+    font-family: 'KoHo', sans-serif;
+    background-color: #21251F;
+    color: #FFF3CA;
+}
