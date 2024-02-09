@@ -27,8 +27,13 @@ body {
     color: #A7BA9C;
 }
 
+.background {
+    height: 500px;
+    background: url(/FilmesNerds/img_index/extra/background-mapas.jpeg) no-repeat center;
+    background-size: cover;
+}
+
 .header {
-    background-image: url(/FilmesNerds/img_index/extra/background.jpg);
     height: 400px;
     padding: 80px;
     text-align: center;
