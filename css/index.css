@@ -60,7 +60,8 @@ margin: 0;
     cursor: pointer;
     font-family: 'KoHo', sans-serif;
     font-size: 16px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .h2 {
