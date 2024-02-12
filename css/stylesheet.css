@@ -1,26 +1,27 @@
-body{
+body {
     font-family: 'KoHo', sans-serif;
     font-size: 16px;
 }
 
-header{
+header {
     background-color: #FFFBF0;
 }
 
-footer{
+footer {
     background-color: #21251F;
 }
 
-footer img{ width: 250px;}
-
-#quote{
-     background-color:  #FFFBF0;
+footer img {
+    width: 250px;
 }
 
-#quote p{
+#quote {
+    background-color: #FFFBF0;
+}
+
+#quote p {
     width: 90%;
     text-align: justify;
-
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -28,49 +29,38 @@ footer img{ width: 250px;}
     width: 50%;
     padding: 10px;
     justify-content: space-around;
-
-    font-family: Kantumruy,sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding: 6em;
+    font-family: Kantumruy, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6em;
 }
 
 
 /* MAIN NAV */
 
-#main_nav{
+.navbar {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 1440px;
-    padding: 10px;
-    justify-content: space-around;
+    background-color: #FFFBF0;
+    height: 200px;
 }
 
-#main_nav img{
-    width: 150px;
-}
-
-#main_nav a {
+.navbar a {
     color: black;
-    /* padding: 30px 60px; */
-    padding: 3em;
+    padding: 30px 80px;
     text-decoration: none;
+    font-family: 'KoHo', sans-serif;
 }
 
-#main_nav a:visited{
-    text-decoration:underline 3px;
-    text-underline-offset: 0.4em;
-    color: #263C1A;
+.navbar a:visited {
+    color: #A7BA9C;
 }
 
-#main_nav a:hover{
-    text-decoration:underline 3px;
-    text-underline-offset: 0.4em;
-    color: #263C1A;
+.navbar img {
+    width: 100px;
 }
 
 
@@ -83,4 +73,6 @@ padding: 6em;
     --secondary-color2: #FFF3CA;
     --secondary-color3: #FAAE54;
     --main-text: #0E0E0E;
+
+    Não funcionou =(
 } */
