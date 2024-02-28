@@ -25,6 +25,7 @@ p {
     align-items: center;
     background-color: #FFFBF0;
     height: 200px;
+    position: fixed;
 }
 
 .navbar a {
@@ -36,6 +37,10 @@ p {
 
 .navbar a:visited{
     color: #A7BA9C;
+}
+
+header {
+    padding-top: 200px;
 }
 
 .background {
