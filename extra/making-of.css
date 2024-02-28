@@ -26,6 +26,7 @@ p {
     background-color: #FFFBF0;
     height: 200px;
     position: fixed;
+    width: 100%;
 }
 
 .navbar a {
@@ -49,7 +50,7 @@ header {
     background-size: cover;
 }
 
-.header {
+.header, .tabela-texto {
     height: 400px;
     padding: 80px;
     text-align: center;
@@ -71,6 +72,18 @@ header {
     width: 600px;
     padding: 20px;
     border-radius: 20px;
+}
+
+.bootstrap{
+    height: 1000px;
+}
+
+.tabela {
+    height: 800px;
+}
+
+.table {
+    margin-top: 100px;
 }
 
 .rodape {

@@ -16,6 +16,7 @@ body {
     background-color: #FFFBF0;
     height: 200px;
     position: fixed;
+    width: 100%;
 }
 
 .navbar a {
