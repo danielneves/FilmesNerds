@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'RingBearer';
+    src: url('../Fonte/RingbearerMedium-51mgZ.ttf') format('truetype');
+}
+
+* {
+    font-family: RingBearer;
+}
+body{
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 7.5% 20% auto auto 20% auto 20% 7.5%;
+    grid-template-areas:
+        "enu enu enu enu enu enu enu enu"
+        "imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal"
+        "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
+        "texto texto texto texto texto texto texto texto"
+        "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
+        "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
+        "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
+        "rodape rodape rodape rodape rodape rodape rodape rodape"
+}
+
+.menu {
+    grid-area: enu;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-arvore-topo pagina-inicial pagina-inicial autor personagens personagens livros extras";
+    align-items: center;
+    justify-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+#imagem_arvore_topo {
+    grid-area: imagem-arvore-topo;
+    height: 100%;
+}
+
+#pagina_inicial {
+    grid-area: pagina-inicial;
+}
+
+#autor {
+    grid-area: autor;
+}
+
+#personagens {
+    grid-area: personagens;
+}
+
+#livros {
+    grid-area: livros;
+}
+
+#extras {
+    grid-area: extras;
+}
+
+
+.imagem_principal {
+    grid-area: imagem-principal;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.texto {
+    grid-area: texto;
+    text-align: justify;
+    align-self: center;
+}
+
+.livros1 {
+    grid-area: livros1;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-livro-hobbit texto-livro-hobbit imagem-livro-sociedadeanel texto-livro-sociedadeanel imagem-livro-duastorres texto-livro-duastorres imagem-livro-retornorei texto-livro-retornorei";
+    align-items: center;
+    justify-items: center;
+}
+
+#imagem_livro_hobbit {
+    grid-area: imagem-livro-hobbit;
+}
+
+#texto_livro_hobbit {
+    grid-area: texto-livro-hobbit;
+}
+
+#imagem_livro_sociedadeanel {
+    grid-area: imagem-livro-sociedadeanel;
+}
+
+#texto_livro_sociedadeanel {
+    grid-area: texto-livro-sociedadeanel;
+}
+
+#imagem_livro_duastorres {
+    grid-area: imagem-livro-duastorres;
+}
+
+#texto_livro_duastorres {
+    grid-area: texto-livro-duastorres;
+}
+
+#imagem_livro_retornorei {
+    grid-area: imagem-livro-retornorei;
+}
+
+#texto_livro_retornorei {
+    grid-area: texto-livro-retornorei;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    justify-self: center;
+    align-self: center;
+}
+
+.livros2 {
+    grid-area: livros2;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-livro-contosinacabados texto-livro-contosinacabados imagem-livro-silmarillion texto-livro-silmarillion imagem-livro-filhoshurin texto-livro-filhoshurin imagem-livro-quedanumenor texto-livro-quedanumenor";
+    align-items: center;
+    justify-items: center;
+}
+
+#imagem_livro_contosinacabados {
+    grid-area: imagem-livro-contosinacabados;
+}
+
+#texto_livro_contosinacabados {
+    grid-area: texto-livro-contosinacabados;
+}
+
+#imagem_livro_silmarillion {
+    grid-area: imagem-livro-silmarillion;
+}
+
+#texto_livro_silmarillion {
+    grid-area: texto-livro-silmarillion;
+}
+
+#imagem_livro_filhoshurin {
+    grid-area: imagem-livro-filhoshurin;
+}
+
+#texto_livro_filhoshurin {
+    grid-area: texto-livro-filhoshurin;
+}
+
+#imagem_livro_quedanumenor {
+    grid-area: imagem-livro-quedanumenor;
+}
+
+#texto_livro_quedanumenor {
+    grid-area: texto-livro-quedanumenor;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-arvore-rodape . . . . . nomes-grupo-rodape1 nomes-grupo-rodape2";
+    align-items: center;
+    justify-items: center;
+}
+
+#imagem_arvore_rodape {
+    grid-area: imagem-arvore-rodape;
+    height: 100%;
+}
+
+#nomes_grupo_rodape1 {
+    grid-area: nomes-grupo-rodape1;
+    color: white;
+    font-size: smaller;
+}
+#nomes_grupo_rodape2 {
+    grid-area: nomes-grupo-rodape2;
+    color: white;
+    font-size: smaller;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: small;
+    }
+
+    .container {
+
+        grid-template-rows: 5% 15% 5% 10% 15% 12.5% 2.5% 15% 12.5% 7.5%;
+        grid-template-areas:
+            "enu enu enu enu enu enu enu enu"
+            "imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal"
+            "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
+            "texto texto texto texto texto texto texto texto"
+            "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
+            "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
+            "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
+            "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
+            "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
+            "rodape rodape rodape rodape rodape rodape rodape rodape";
+    }
+
+    .livros1 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-hobbit imagem-livro-sociedadeanel imagem-livro-duastorres imagem-livro-retornorei"
+            "texto-livro-hobbit texto-livro-sociedadeanel texto-livro-duastorres texto-livro-retornorei";
+    }
+
+    .livros2 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-contosinacabados imagem-livro-silmarillion imagem-livro-filhoshurin imagem-livro-quedanumenor"
+            "texto-livro-contosinacabados texto-livro-silmarillion texto-livro-filhoshurin texto-livro-quedanumenor";
+    }
+}

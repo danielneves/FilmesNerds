@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'RingBearer';
+    src: url('../Fonte/RingbearerMedium-51mgZ.ttf') format('truetype');
+}
+
+* {
+    font-family: RingBearer;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 15% 15% 25% 25% 20%;
+    grid-template-areas:
+        "enu enu enu enu enu enu enu enu"
+        ". . . titulo titulo . . ."
+        "texto texto texto texto video video video video"
+        "texto texto texto texto video video video video"
+        "rodape rodape rodape rodape rodape rodape rodape rodape";
+}
+
+.menu {
+    grid-area: enu;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-arvore-topo pagina-inicial pagina-inicial autor personagens personagens livros extras";
+    align-items: center;
+    justify-items: center;
+}
+
+.imagem_arvore_topo {
+    grid-area: imagem-arvore-topo;
+    height: 100%;
+}
+
+.pagina_inicial {
+    grid-area: pagina-inicial;
+    color: white;
+    font-size: small;
+}
+
+.autor {
+    grid-area: autor;
+    color: white;
+    font-size: small;
+}
+
+.personagens {
+    grid-area: personagens;
+    color: white;
+    font-size: small;
+}
+
+.livros {
+    grid-area: livros;
+    color: white;
+    font-size: small;
+}
+
+.extras {
+    grid-area: extras;
+    color: white;
+    font-size: small;
+}
+
+.titulo {
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    width: max-content;
+    height: max-content;
+}
+
+.texto {
+    align-self: center;
+    height: auto;
+    grid-area: texto;
+    text-align: justify;
+    font-size: medium;
+    margin: 0;
+    padding: 2.5% 5% 2.5% 5%;
+}
+
+.video {
+    grid-area: video;
+    justify-self: center;
+    align-self: center;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "imagem-arvore-rodape . . . . . nomes-grupo-rodape1 nomes-grupo-rodape2";
+    align-items: center;
+    justify-items: center;
+}
+
+#imagem_arvore_rodape {
+    grid-area: imagem-arvore-rodape;
+    height: 100%;
+}
+
+#nomes_grupo_rodape1 {
+    grid-area: nomes-grupo-rodape1;
+    color: white;
+    font-size: smaller;
+}
+
+#nomes_grupo_rodape2 {
+    grid-area: nomes-grupo-rodape2;
+    color: white;
+    font-size: smaller;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 10% auto auto auto 10%;
+        grid-template-areas:
+            "enu enu enu enu enu enu enu enu"
+            ". . . titulo titulo . . ."
+            "texto texto texto texto texto texto texto texto"
+            "video video video video video video video video"
+            "rodape rodape rodape rodape rodape rodape rodape rodape";
+    }
+
+    .pagina_inicial {
+        font-size: smaller;
+    }
+
+    .autor {
+        font-size: smaller;
+    }
+
+    .personagens {
+        font-size: smaller;
+    }
+
+    .livros {
+        font-size: smaller;
+    }
+
+    .extras {
+        font-size: smaller;
+    }
+
+    .texto {
+        font-size: small;
+        align-self: center;
+    }
+
+    .rodape {
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "imagem-arvore-rodape . . . . . nomes-grupo-rodape1 nomes-grupo-rodape2";
+    }
+
+    .nomes_grupo_rodape {
+        align-self: center;
+        justify-self: center;
+        font-size: smaller;
+    }
+}

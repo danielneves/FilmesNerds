@@ -5,52 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livros</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 
 <body>
-    <nav>
-        <img src="imagens_livros/Arvore-removebg-preview.png" alt="logo" />
-        <a href="/index.html">Página inicial</a>
-        <a href="/autor.html">Autor</a>
-        <a href="/personagens.html">Personagens</a>
-        <a href="/Livros/livros.html">Livros</a>
-        <a href="/extra.html">Extras</a>
-    </nav>
+    <div class="container">
+        <nav class="menu">
+            <img src="imagens_livros/Arvore-removebg-preview.png" alt="logo" id="imagem_arvore_topo" />
+            <a href="../index.html" id="pagina_inicial">Página inicial</a>
+            <a href="../autor.html" id="autor">Autor</a>
+            <a href="../personagens/framework/index.html" id="personagens">Personagens</a>
+            <a href="livros.html" id="livros">Livros</a>
+            <a href="../extra/index.html" id="extras">Extras</a>
+        </nav>
 
-    <div class="imagem-capa">
-        <img src="imagens_livros/primeira_imagem.jpg" alt="Imagem Tolkien">
-    </div>
-    <section class="texto-saga">
-        <h2>LIVROS - SAGA SENHOR DOS ANÉIS</h2>
-        <p>John Ronald Reuel Tolkien (conhecido internacionalmente como J. R. R. Tolkien), foi um escritor, professor
-            universitário e filólogo britânico, nascido na África do Sul, seu legado se estende até hoje. As suas
-            obras de ficção impactam não apenas o mundo da literatura, mas também o audiovisual. Além da primeira
+        <img src="imagens_livros/sociedadedoanel.jpg" alt="Tolkien" class="imagem_principal">
+
+
+        <h2 class="titulo1">LIVROS - SAGA SENHOR DOS ANÉIS</h2>
+        <p class="texto">John Ronald Reuel Tolkien (conhecido internacionalmente como J. R. R. Tolkien), foi um
+            escritor,
+            professor
+            universitário e filólogo britânico, nascido na África do Sul, seu legado se estende até hoje. As
+            suas
+            obras de ficção impactam não apenas o mundo da literatura, mas também o audiovisual. Além da
+            primeira
             citada, também é de autoria de Tolkien os aclamados livros “O Hobbit” e “O Silmarillion”.Tamanho
-            destaque rendeu ao escritor o título de Comendador da Ordem do Império Britânico, que é dado para figuras
-            que contribuíram para a artes e ciências, trabalho com organizações de caridade e de assistência social,
-            e serviço público fora do Serviço Civil. Na época, em 1972, foi dado diretamente pela Rainha Elizabeth II.
+            destaque rendeu ao escritor o título de Comendador da Ordem do Império Britânico, que é dado para
+            figuras
+            que contribuíram para a artes e ciências, trabalho com organizações de caridade e de assistência
+            social,
+            e serviço público fora do Serviço Civil. Na época, em 1972, foi dado diretamente pela Rainha
+            Elizabeth II.
             As suas obras sempre destacam lutas, dores e bravuras dos personagens principais. O que está muito
             ligado à Primeira Guerra Mundial, da qual Tolkien participou ativamente.</p>
-    </section>
-    <section class="livros">
-        <div class="conteudo">
-            <a href="hobbit.html"><img src="imagens_livros/Livro_O_Hobbit.jpg" alt="livro O Hobbit"
-                    class="imagens-livros"></a>
-            <div class="texto-livros">
-                <h5>O HOBBIT</h5>
 
+        <div class="livros1">
+
+            <a href="hobbit.html">
+                <img src="imagens_livros/Livro_O_Hobbit.jpg" alt="O Hobbit" id="imagem_livro_hobbit">
+            </a>
+            <div id="texto_livro_hobbit">
+                <h5>O HOBBIT</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Brochura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 336 Páginas</p>
             </div>
 
-        </div>
-        <div class="conteudo">
-            <a href="sociedadedoanel.html"><img src="imagens_livros/Livro_A_Sociedade_do_Anél.jpg"
-                    alt="Livro a Sociedade do Anél" class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="sociedadedoanel.html">
+                <img src="imagens_livros/Livro_A_Sociedade_do_Anél.jpg" alt="a sociedade do anel"
+                    id="imagem_livro_sociedadeanel">
+            </a>
+            <div id="texto_livro_sociedadeanel">
                 <h5>SENHOR DOS ANÉIS:<br>A SOCIEDADE DO ANÉL</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Dura</p>
@@ -58,82 +65,75 @@
                 <p>Páginas: 608</p>
             </div>
 
-        </div>
-        <div class="conteudo">
-            <a href="duastorres.html"><img src="imagens_livros/Livro As Duas Torres.jpg" alt="Livro as Duas Torres"
-                    class=" imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="duastorres.html">
+                <img src="imagens_livros/Livro_As_Duas_Torres.jpg" alt="as duas torres"
+                    id="imagem_livro_duastorres">
+            </a>
+            <div id="texto_livro_duastorres">
                 <h5>SENHOR DOS ANÉIS:<br>AS DUAS TORRES</h5>
-
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Dura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 464 Páginas</p>
             </div>
 
-        </div>
-
-        <div class="conteudo">
-            <a href="retornodorei.html"><img src="imagens_livros/livro O Retorno do Rei.jpg" alt="Livro Retorno do Rei"
-                    class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="retornodorei.html">
+                <img src="imagens_livros/livro_O_Retorno_do_Rei.jpg" alt="o retorno do rei" id="imagem_livro_retornorei">
+            </a>
+            <div id="texto_livro_retornorei">
                 <h5>SENHOR DOS ANÉIS:<br>O RETORNO DO REI</h5>
-
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Dura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 528 Páginas</p>
             </div>
         </div>
-        </div>
-    </section>
 
-    <section class="texto-outras-obras">
-        <h2><br><br>OUTRAS OBRAS DE TOLKIEN</h2>
-    </section>
+        <h2 class="titulo2">OUTRAS OBRAS DE TOLKIEN</h2>
 
-    <section class="livros">
+        <div class="livros2">
 
-        <div class="conteudo">
-            <a href="contosinacabados.html"><img src="imagens_livros/Livro Contos Inacabados.jpg"
-                    alt="Livro Contos Inacabados" class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="contosinacabados.html">
+                <img src="imagens_livros/Livro_Contos_Inacabados.jpg" alt="contos inacabados"
+                    id="imagem_livro_contosinacabados">
+            </a>
+            <div id="texto_livro_contosinacabados">
                 <h5>CONTOS INACABADOS</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Brochura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 624 Páginas</p>
             </div>
-        </div>
 
-        <div class="conteudo">
-            <a href="silmarillion.html"><img src="imagens_livros/Livro Silmarillion.jpg" alt="Livro Silmarillion"
-                    class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="silmarillion.html">
+                <img src="imagens_livros/Livro_Silmarillion.jpg" alt="contos inacabados"
+                    id="imagem_livro_silmarillion">
+            </a>
+            <div id="texto_livro_silmarillion">
                 <h5>O SILMARILLION</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Brochura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 496 Páginas</p>
             </div>
-        </div>
 
-        <div class="conteudo">
-            <a href="filhosdehurin.html"><img src="imagens_livros/Livro os Filhos de Húrin.jpg"
-                    alt="Livro Filhos de Húrin" class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="filhosdehurin.html">
+                <img src="imagens_livros/Livro_os_Filhos_de_Húrin.jpg" alt="contos inacabados"
+                    id="imagem_livro_filhoshurin">
+            </a>
+            <div id="texto_livro_filhoshurin">
                 <h5>OS FILHOS DE HÚRIN</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Brochura</p>
                 <p>Autor: J.R.R. Tolkien</p>
                 <p>Páginas: 288 Páginas</p>
             </div>
-        </div>
 
-        <div class="conteudo">
-            <a href="quedadenumenor.html"><img src="imagens_livros/Livro a Queda de Númenor.jpg"
-                    alt="A Queda de Númenor" class="imagens-livros"></a>
-            <div class="texto-livros">
+            <a href="quedadenumenor.html">
+                <img src="imagens_livros/Livro_a_Queda_de_Númenor.jpg" alt="contos inacabados"
+                    id="imagem_livro_quedanumenor">
+            </a>
+            <div id="texto_livro_quedanumenor">
                 <h5>A QUEDA DE NÚMENOR</h5>
                 <p>Editora: HarperCollins Brasil</p>
                 <p>Capa: Dura</p>
@@ -141,18 +141,20 @@
                 <p>Páginas: 336 Páginas</p>
             </div>
         </div>
-    </section>
-    <br><br><br><br>
-    <footer>
-        <img src="imagens_livros/Arvore-removebg-preview.png" alt="Arvore">
-        <div>
-            <p>Alexandre</p>
-            <p>Ana Diulia</p>
-            <p>Daniel Neves</p>
-            <p>Gabrielle Espíndola</p>
-            <p>Natália Maglio</p>
-        </div>
-    </footer>
+
+        <footer class="rodape">
+            <img src="imagens_livros/Arvore-removebg-preview.png" alt="Arvore" id="imagem_arvore_rodape">
+            <div id="nomes_grupo_rodape1">
+                <p>Alexandre</p>
+                <p>Ana Diulia</p>
+                <p>Daniel Neves</p>
+            </div>
+            <div id="nomes_grupo_rodape2">                
+                <p>Gabrielle Espíndola</p>
+                <p>Natália Maglio</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -5,34 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senhor do Anéis: A Sociedade do Anél</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/style_livros.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <nav class="menu">
-        <img src="imagens_livros/Arvore-removebg-preview.png" alt="logo">
-        <a href="/index.html">
-            <ul>PÁGINA PRINCIPAL</ul>
-        </a>
-        <a href="/autor.html">
-            <ul>AUTOR</ul>
-        </a>
-        <a href="/personagens.html">
-            <ul>PERSONAGENS</ul>
-        </a>
-        <a href="/Livros/livros.html">
-            <ul>LIVROS</ul>
-        </a>
-        <a href="/extra.html">
-            <ul>EXTRA</ul>
-        </a>
-    </nav>
+        <nav class="menu">
+            <img src="imagens_livros/Arvore-removebg-preview.png" alt="logo" class="imagem_arvore_topo">
+            <a href="../index.html" class="pagina_inicial">PÁGINA INICIAL</a>
+            <a href="../autor.html" class="autor">AUTOR</a>
+            <a href="../personagens/framework/index.html" class="personagens">PERSONAGENS</a>
+            <a href="livros.html" class="livros">LIVROS</a>
+            <a href="../extra/index.html" class="extras">EXTRAS</a>
+        </nav>
 
-    <h1>Senhor do Anéis: A Sociedade do Anél</h1>
+    <h1 class="titulo">Senhor do Anéis: A Sociedade do Anél</h1>
 
-    <section class="texto-video">
-        <p class="t1">O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico
+            <p class="texto">O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico
             de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as
             outras obras do gênero até hoje. A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das
             antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o
@@ -56,20 +46,20 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
-    </section>
-
-    <br><br>
-
-    <footer class="footer">
-        <img src="imagens_livros/Arvore-removebg-preview.png" alt="Arvore">
-        <div>
-            <p>Alexandre</p>
-            <p>Ana Diulia</p>
-            <p>Daniel Neves</p>
-            <p>Gabrielle Espíndola</p>
-            <p>Natália Maglio</p>
-        </div>
-    </footer>
+    
+        <footer class="rodape">
+            <img src="imagens_livros/Arvore-removebg-preview.png" alt="Arvore" id="imagem_arvore_rodape">
+            <div id="nomes_grupo_rodape1">
+                <p>Alexandre</p>
+                <p>Ana Diulia</p>
+                <p>Daniel Neves</p>
+            </div>
+            <div id="nomes_grupo_rodape2">                
+                <p>Gabrielle Espíndola</p>
+                <p>Natália Maglio</p>
+            </div>
+        </footer>
+</div>
 </body>
 
 </html>
