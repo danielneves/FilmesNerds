@@ -68,7 +68,8 @@ header {
 
 .videos div {
     background: #FFFFFF;
-    height: 450px;
+    text-align: center;
+    height: 400px;
     width: 600px;
     padding: 20px;
     border-radius: 20px;
@@ -79,7 +80,11 @@ header {
 }
 
 .tabela {
-    height: 800px;
+    height: 700px;
+}
+
+.tabela-texto {
+    height: 200px;
 }
 
 .table {
@@ -104,6 +109,7 @@ header {
 .lista {
     font-family: 'KoHo', sans-serif;
     direction: rtl;
+    text-align: right;
     color: #FFF3CA;
 }
 
@@ -115,4 +121,19 @@ header {
     font-family: 'KoHo', sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
+}
+
+/* Ajustes  de texto para o Bootstrap */
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.videos h2 {
+    font-size: 24px;
 }
