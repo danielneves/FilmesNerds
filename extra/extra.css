@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-.navbar {
+.navbarMenu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,14 +19,15 @@ body {
     width: 100%;
 }
 
-.navbar a {
+.navbarMenu a {
     color: black;
     padding: 30px 80px;
     text-decoration: none;
     font-family: 'KoHo', sans-serif;
+    line-height: normal;
 }
 
-.navbar a:visited{
+.navbarMenu a:visited{
     color: #A7BA9C;
 }
 
@@ -128,11 +129,10 @@ header {
 
 .rodape {
     background-color: #21251F;
-    height: 400px;
     padding: 50px;
 }
 
-.container {
+.containerFooter {
     display: flex;
     background-color: #21251F;
 }
@@ -155,4 +155,5 @@ header {
     font-family: 'KoHo', sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
+    font-size: 18px;
 }
