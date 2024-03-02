@@ -115,6 +115,12 @@ header {
     padding: 40px;
 }
 
+.trilhas img:hover {
+    padding: 10px;
+    background-color: #aabea2;
+    border-radius: 10px;
+}
+
 .trilhas1 {
     background-color: #FFFBF0;
 }
