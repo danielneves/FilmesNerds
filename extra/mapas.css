@@ -108,8 +108,9 @@ section {
 }
 
 .rights {
-    font-family: 'KoHo', sans-serif;
+    font-family: "Kantumruy Pro", sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
     font-size: 18px;
+    margin-bottom: 16px;
 }

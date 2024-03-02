@@ -94,7 +94,6 @@ header {
 
 .rodape {
     background-color: #21251F;
-    height: auto;
     padding: 50px;
 }
 
@@ -119,8 +118,7 @@ header {
 }
 
 .rights {
-    font-family: 'KoHo', sans-serif;
-    font-weight: 400;
+    font-family: "Kantumruy Pro", sans-serif;
     font-size: 18px;
     background-color: #21251F;
     color: #FFF3CA;
