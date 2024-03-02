@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 h1, h2{
     font-family: 'Kantumruy Pro', sans-serif;
     font-weight: 700;
@@ -37,8 +41,37 @@ p {
     line-height: normal;
 }
 
-.navbarMenu a:visited{
-    color: #A7BA9C;
+.dropdown a {
+    display: inline-block;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+ .dropdown:hover .dropbtn {
+    color: #aabea2;
+}
+
+ .drop-content {
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    display: none;
+    background-color: #aabea2;
+}
+
+ .drop-content a {
+    border: 1px solid #fffbf035;
+    display: block;
+    padding: 40px;
+    color: black;
+}
+
+ .drop-content a:hover {
+    background-color: #21251F;
+    color: white;
 }
 
 header {
