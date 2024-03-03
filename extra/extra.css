@@ -252,12 +252,12 @@ header {
     }
 
     .extra div {
-        height: 450px;
+        border-radius: 0;
     }
 
     .extra div p {
         font-size: 14px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .imagens {
