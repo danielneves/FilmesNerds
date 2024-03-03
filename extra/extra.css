@@ -202,9 +202,111 @@ header {
 }
 
 .rights {
-    font-family: "Kantumruy Pro", sans-serif;    
+    font-family: "Kantumruy Pro", sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
     font-size: 18px;
     margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarMenu {
+        height: 100px;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .navLogo {
+        width: 0%;
+        display: none;
+    }
+
+    .navbarMenu a {
+        padding: 10px;
+    }
+
+    .drop-content {
+        width: 80px;
+    }
+
+    .drop-content a {
+        padding: 15px;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .background {
+        height: 300px;
+    }
+
+    .texto1, .texto2 {
+        font-size: 14px;
+        height: fit-content;
+    }
+
+    .extra {
+        flex-direction: column;
+        height: 1600px;
+    }
+
+    .extra div {
+        height: 450px;
+    }
+
+    .extra div p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .imagens {
+        height: 350px;
+    }
+
+    .imagens img {
+        width: auto;
+        height: 250px;
+    }
+
+    .rodape, .rights {
+        font-size: 14px;
+    }
+
+    .rodape img {
+        width: 160px;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+    .navbarMenu img {
+        width: 80px;
+    }
+
+    .navbarMenu a {
+        padding: 20px;
+    }
+
+    .drop-content {
+        width: 140px;
+    }
+
+    .drop-content a {
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .background {
+        height: 400px;
+    }
+
+    .texto1, .texto2 {
+        height: fit-content;
+    }
+
+    .extra {
+        flex-direction: column;
+        height: 1800px;
+    }
 }
