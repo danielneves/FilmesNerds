@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -93,7 +93,7 @@ header {
     font-size: 18px;
 }
 
-.texto1 h1{
+.texto1 h1 {
     font-family: 'Kantumruy Pro', sans-serif;
     font-weight: 700;
 }
@@ -156,7 +156,7 @@ header {
     font-size: 18px;
 }
 
-.texto2 h2{
+.texto2 h2 {
     font-family: 'Kantumruy Pro', sans-serif;
     font-weight: 700;
 }
@@ -244,15 +244,12 @@ header {
     .texto1, .texto2 {
         font-size: 14px;
         height: fit-content;
+        padding: 40px;
     }
 
     .extra {
         flex-direction: column;
         height: 1600px;
-    }
-
-    .extra div {
-        border-radius: 0;
     }
 
     .extra div p {
@@ -293,7 +290,7 @@ header {
     }
 
     .drop-content a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 30px;
     }
 

@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -183,4 +183,125 @@ p {
 
 .videos h2 {
     font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarMenu {
+        height: 100px;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .navLogo {
+        width: 0%;
+        display: none;
+    }
+
+    .navbarMenu a {
+        padding: 10px;
+    }
+
+    .drop-content {
+        width: 80px;
+    }
+
+    .drop-content a {
+        padding: 15px;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .background {
+        height: 300px;
+    }
+
+    .header {
+        height: fit-content;
+        padding: 40px;
+    }
+
+    .videos {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .videos div {
+        height: fit-content;
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .videos iframe {
+        width: 350px;
+    }
+
+    .year {
+        display: none;
+    }
+
+    .tabela {
+        height: 1300px;
+    }
+
+    .tabela-texto {
+        padding: 40px;
+    }
+
+    .table {
+        margin-top: 50px;
+    }
+
+    .rodape, .rights {
+        font-size: 14px;
+    }
+
+    .rodape img {
+        width: 160px;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+    .navbarMenu a {
+        padding: 20px;
+    }
+
+    .drop-content {
+        width: 140px;
+    }
+
+    .drop-content a {
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .background {
+        height: 400px;
+    }
+
+    .header {
+        height: fit-content;
+    }
+
+    .videos {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .videos div {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .tabela {
+        height: 900px;
+    }
+
+    .table {
+        margin-top: 50px;
+        padding: 80px;
+    }
 }
