@@ -1,0 +1,58 @@
+body {
+    display: flex;
+}
+
+header {
+    background-color: #EAFF95;
+    padding: 50px 0;
+    /* width: 100%; */
+}
+
+nav {
+    background-color: rgb(85, 83, 83);
+}
+
+aside {
+    background-color: rgb(160, 160, 160);
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: rgb(223, 255, 136);
+    padding: 10px 0;
+}
+
+.container {}
+
+.container2 {}
+
+nav {
+    width: 20%;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+}
+
+article {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+article, aside {
+    height: 600px;
+}
