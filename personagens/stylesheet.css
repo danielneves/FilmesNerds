@@ -7,26 +7,6 @@ header {
     background-color: #FFFBF0;
 }
 
-footer {
-    background-color: #21251F;
-    height: 400px;
-    padding: 50px;
-    img {
-        width: 250px;
-    }
-    .lista {
-        font-family: 'KoHo', sans-serif;
-        direction: rtl;
-        color: #FFF3CA;
-    }
-    ul {
-        list-style-type: none;
-    }
-    ul li {
-        padding: 10px;
-    }
-}
-
 
 /* MAIN NAV */
 
@@ -54,6 +34,14 @@ footer {
 }
 
 .container {
+    display: flex;
+    background-color: #21251F;
+}
+
+.container2 {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #FFF;
     display: flex;
     background-color: #21251F;
 }
@@ -91,7 +79,8 @@ footer {
 }
 
 .extra {
-    background-color: #a7ba9c87;
+    margin: 0 auto;
+    width: 1140px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -117,7 +106,7 @@ footer {
 .extra p {
     margin-bottom: 50px;
     font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 h2 {
@@ -128,4 +117,16 @@ h2 {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.rodape {
+    background-color: #21251F;
+    padding: 50px;
+}
+
+.containerFooter {
+    display: flex;
+    margin: 0;
+    width: 1140px;
+    background-color: #21251F;
 }
