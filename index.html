@@ -8,22 +8,26 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="index.html">
-        <img src="/img_index/logo.svg" width="100px" alt="Logo" />
+    <nav class="navbarMenu">
+      <a class="navLogo" href="/FilmesNerds/index.html">
+          <img src="/FilmesNerds/img_index/logo.svg" width="100px" alt="Logo">
       </a>
-      <a class="navbotao" href="index.html">PÁGINA INICIAL</a>
-      <a class="navbotao" href="/autor.html">AUTOR</a>
-      <a class="navbotao" href="/personagens.html">PERSONAGENS</a>
-      <a class="navbotao" href="/Livros/livros.html">LIVROS</a>
-      <a class="navbotao" href="/extra/index.html">EXTRAS</a>
-    </nav>
+      <a class="navbotao" href="/FilmesNerds/index.html">PÁGINA INICIAL</a>
+      <a class="navbotao" href="/FilmesNerds/autor.html">AUTOR</a>
+      <a class="navbotao" href="/FilmesNerds/personagens/framework/index.html">PERSONAGENS</a>
+      <a class="navbotao" href="/FilmesNerds/Livros/livros.html">LIVROS</a>
+      <div class="dropdown">
+          <a class="dropbtn" href="/FilmesNerds/extra/index.html">EXTRAS</a>
+          <div class="drop-content">
+              <a href="/FilmesNerds/extra/mapas.html">Mapas</a>
+              <a href="/FilmesNerds/extra/making-of.html">Making-of</a>
+              <a href="/FilmesNerds/extra/trilhas.html">Trilhas</a>
+          </div>
+      </div>
+  </nav>
 
     <header class="header">
-      <img
-        src="img_index/banner.png"
-        alt="Banner com Tolkien e a frase 'Still round the corner there may wait a new road or a secret gate... The Fellowship of the Ring' "
-      />
+      <div class="background"></div>
     </header>
 
     <div>
@@ -43,9 +47,7 @@
           </p>
 
           <div>
-            <a href="autor.html"
-              ><button class="botao" type="button">SAIBA MAIS</button></a
-            >
+            <a style="text-decoration: none;" href="autor.html"><button class="botao" type="button">SAIBA MAIS</button></a>
           </div>
         </section>
       </main>
@@ -70,11 +72,7 @@
           </p>
 
           <div>
-            <a href="/personagens/personagens2.html"
-              ><button class="botao-section" type="button">
-                SAIBA MAIS
-              </button></a
-            >
+            <a style="text-decoration: none;" href="/FilmesNerds/personagens/personagens2.html"><button class="botao-section" type="button">SAIBA MAIS</button></a>
           </div>
         </div>
       </section>
@@ -99,11 +97,7 @@
           </p>
 
           <div>
-            <a href="Livros/livros.html"
-              ><button class="botao-section" type="button">
-                SAIBA MAIS
-              </button></a
-            >
+            <a style="text-decoration: none;" href="/FilmesNerds/Livros/livros.html"><button class="botao-section" type="button">SAIBA MAIS</button></a>
           </div>
         </div>
       </section>
@@ -128,11 +122,7 @@
           </p>
 
           <div>
-            <a href="extra/index.html"
-              ><button class="botao-section" type="button">
-                SAIBA MAIS
-              </button></a
-            >
+            <a style="text-decoration: none;" href="/FilmesNerds/extra/index.html"><button class="botao-section" type="button">SAIBA MAIS</button></a>
           </div>
         </div>
       </section>
@@ -157,20 +147,16 @@
           </p>
 
           <div>
-            <a href="autor.html"
-              ><button class="botao-section" type="button">
-                SAIBA MAIS
-              </button></a
-            >
+            <a style="text-decoration: none;" href="autor.html"><button class="botao-section" type="button">SAIBA MAIS</button></a>
           </div>
         </div>
       </section>
     </div>
 
     <footer class="rodape">
-      <div class="container">
+      <div class="containerFooter">
         <div class="logo">
-          <img src="/img_index/logo2.png" alt="Logo" />
+          <img src="/FilmesNerds/img_index/logo2.png" alt="Logo" />
         </div>
         <div class="lista">
           <ul style="list-style-type: none">
@@ -178,7 +164,7 @@
             <li>ANA DIULIA</li>
             <li>GABRIELLE</li>
             <li>DANIEL NEVES</li>
-            <li>NATÁLIA MÁLGIO</li>
+            <li>NATÁLIA MAGLIO</li>
           </ul>
         </div>
       </div>
