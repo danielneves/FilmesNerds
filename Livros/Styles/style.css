@@ -1,11 +1,15 @@
-@font-face {
+/* @font-face {
     font-family: 'RingBearer';
     src: url('../Fonte/RingbearerMedium-51mgZ.ttf') format('truetype');
-}
+} */
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;700&display=swap');
+
+/* * {
     font-family: RingBearer;
-}
+} */
+
 body{
     margin: 0;
 }
@@ -13,12 +17,12 @@ body{
 .container {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: 7.5% 20% auto auto 20% auto 20% 7.5%;
+    grid-template-rows: auto 20% 5% auto 20% auto 20% 7.5%;
     grid-template-areas:
         "enu enu enu enu enu enu enu enu"
         "imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal"
         "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
-        "texto texto texto texto texto texto texto texto"
+        ". texto texto texto texto texto texto ."
         "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
         "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
         "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
@@ -27,7 +31,7 @@ body{
 
 .menu {
     grid-area: enu;
-    background-color: black;
+    background-color: #FFFBF0;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: 100%;
@@ -35,10 +39,13 @@ body{
         "imagem-arvore-topo pagina-inicial pagina-inicial autor personagens personagens livros extras";
     align-items: center;
     justify-items: center;
+    position: fixed;
+    width: 100%;
 }
-
-.menu a {
-    color: white;
+.menu a{
+    color: black;
+    font-family: 'KoHo', sans-serif;
+    font-size: larger;
 }
 
 #imagem_arvore_topo {
@@ -77,6 +84,7 @@ body{
     grid-area: titulo1;
     justify-self: center;
     align-self: center;
+    font-family: "Kantumruy Pro", sans-serif;
 
 }
 
@@ -84,9 +92,12 @@ body{
     grid-area: texto;
     text-align: justify;
     align-self: center;
+    font-family: "Kantumrey Pro", sans-serif;
+    font-size: larger;
 }
 
 .livros1 {
+    background-color: #FFFBF0;
     grid-area: livros1;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
@@ -95,6 +106,11 @@ body{
         "imagem-livro-hobbit texto-livro-hobbit imagem-livro-sociedadeanel texto-livro-sociedadeanel imagem-livro-duastorres texto-livro-duastorres imagem-livro-retornorei texto-livro-retornorei";
     align-items: center;
     justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.livros1 > div{
+    text-align: center;
 }
 
 #imagem_livro_hobbit {
@@ -103,14 +119,23 @@ body{
 
 #texto_livro_hobbit {
     grid-area: texto-livro-hobbit;
+    font-family: 'Kantumrey Pro', sans-serif;
 }
 
+#texto_livro_hobbit h5{    
+    font-family: 'KoHo', sans-serif;
+}
 #imagem_livro_sociedadeanel {
     grid-area: imagem-livro-sociedadeanel;
 }
 
 #texto_livro_sociedadeanel {
     grid-area: texto-livro-sociedadeanel;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+#texto_livro_sociedadeanel h5{
+    grid-area: texto-livro-sociedadeanel;
+    font-family: 'KoHo', sans-serif;
 }
 
 #imagem_livro_duastorres {
@@ -119,6 +144,12 @@ body{
 
 #texto_livro_duastorres {
     grid-area: texto-livro-duastorres;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+
+#texto_livro_duastorres h5{
+    grid-area: texto-livro-duastorres;
+    font-family: 'KoHo', sans-serif;
 }
 
 #imagem_livro_retornorei {
@@ -127,15 +158,23 @@ body{
 
 #texto_livro_retornorei {
     grid-area: texto-livro-retornorei;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+
+#texto_livro_retornorei h5{
+    grid-area: texto-livro-retornorei;
+    font-family: 'KoHo', sans-serif;
 }
 
 .titulo2 {
     grid-area: titulo2;
     justify-self: center;
     align-self: center;
+    font-family: "Kantumruy Pro", sans-serif;
 }
 
 .livros2 {
+    background-color: #FFFBF0;
     grid-area: livros2;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
@@ -152,6 +191,12 @@ body{
 
 #texto_livro_contosinacabados {
     grid-area: texto-livro-contosinacabados;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+
+#texto_livro_contosinacabados h5{
+    grid-area: texto-livro-contosinacabados;
+    font-family: 'KoHo', sans-serif;
 }
 
 #imagem_livro_silmarillion {
@@ -160,6 +205,12 @@ body{
 
 #texto_livro_silmarillion {
     grid-area: texto-livro-silmarillion;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+
+#texto_livro_silmarillion h5{
+    grid-area: texto-livro-silmarillion;
+    font-family: 'KoHo', sans-serif;
 }
 
 #imagem_livro_filhoshurin {
@@ -168,6 +219,12 @@ body{
 
 #texto_livro_filhoshurin {
     grid-area: texto-livro-filhoshurin;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+
+#texto_livro_filhoshurin h5{
+    grid-area: texto-livro-filhoshurin;
+    font-family: 'KoHo', sans-serif;
 }
 
 #imagem_livro_quedanumenor {
@@ -176,19 +233,44 @@ body{
 
 #texto_livro_quedanumenor {
     grid-area: texto-livro-quedanumenor;
+    font-family: 'Kantumrey Pro', sans-serif;
+}
+#texto_livro_quedanumenor h5{
+    grid-area: texto-livro-quedanumenor;
+    font-family: 'KoHo', sans-serif;
 }
 
 .rodape {
     grid-area: rodape;
-    background-color: black;
+    background-color: #21251F;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: 100%;
+    grid-template-rows: 80% 20%;
     grid-template-areas:
-        "imagem-arvore-rodape . . . . . nomes-grupo-rodape1 nomes-grupo-rodape2";
+        "imagem-arvore-rodape . . . . . nomes-grupo-rodape1 nomes-grupo-rodape2" 
+        "imagem-arvore-rodape rights rights rights rights rights nomes-grupo-rodape1 nomes-grupo-rodape2";
     align-items: center;
     justify-items: center;
 }
+#rights{
+grid-area: rights;
+display: flex;
+flex-flow: row wrap;
+justify-items: center;
+}
+
+#projeto{
+    color: white;
+    font-size: smaller;
+    margin-right: 10px;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+#data{
+    color: white;
+    font-size: smaller;
+    font-family: "Kantumruy Pro", sans-serif;
+    }
 
 #imagem_arvore_rodape {
     grid-area: imagem-arvore-rodape;
@@ -199,32 +281,43 @@ body{
     grid-area: nomes-grupo-rodape1;
     color: white;
     font-size: smaller;
+    font-family: 'KoHo', sans-serif;
 }
 #nomes_grupo_rodape2 {
     grid-area: nomes-grupo-rodape2;
     color: white;
     font-size: smaller;
+    margin-right: 5px;
+    font-family: 'KoHo', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1279px) {
     * {
-        font-size: small;
+        font-size: medium;
     }
 
     .container {
 
-        grid-template-rows: 5% 15% 5% 10% 15% 12.5% 2.5% 15% 12.5% 7.5%;
+        grid-template-rows: 5% 15% 2.5% 12.5% 15% 12.5% 2.5% 15% 12.5% 7.5%;
         grid-template-areas:
             "enu enu enu enu enu enu enu enu"
             "imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal"
             "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
-            "texto texto texto texto texto texto texto texto"
+            ". texto texto texto texto texto texto ."
             "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
             "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
             "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
             "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
             "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
             "rodape rodape rodape rodape rodape rodape rodape rodape";
+    }
+
+    .texto {
+        grid-area: texto;
+        text-align: justify;
+        align-self: center;
+        font-family: "Kantumrey Pro", sans-serif;
+        font-size: medium;
     }
 
     .livros1 {
@@ -242,4 +335,259 @@ body{
             "imagem-livro-contosinacabados imagem-livro-silmarillion imagem-livro-filhoshurin imagem-livro-quedanumenor"
             "texto-livro-contosinacabados texto-livro-silmarillion texto-livro-filhoshurin texto-livro-quedanumenor";
     }
+}
+
+@media (max-width: 740px) {
+    
+    #imagem_arvore_topo {
+            height: 70%;
+        }
+    .container {
+        grid-template-rows: 5% auto 2.5% auto auto auto auto auto auto 7.5%;        
+        grid-template-areas:
+            "enu enu enu enu enu enu enu enu"
+            "imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal imagem-principal"
+            "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
+            "texto texto texto texto texto texto texto texto"
+            "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
+            "livros1 livros1 livros1 livros1 livros1 livros1 livros1 livros1"
+            "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
+            "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
+            "livros2 livros2 livros2 livros2 livros2 livros2 livros2 livros2"
+            "rodape rodape rodape rodape rodape rodape rodape rodape";
+    }
+    
+    .menu a{
+        font-size: small;
+    }
+
+    .texto{
+        font-size: 0.7em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .titulo1 {
+        margin-top: 5%;
+    }
+
+    .livros1 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-hobbit imagem-livro-sociedadeanel imagem-livro-duastorres imagem-livro-retornorei"
+            "texto-livro-hobbit texto-livro-sociedadeanel texto-livro-duastorres texto-livro-retornorei";        
+    }
+
+    .titulo2 {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .livros2 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-contosinacabados imagem-livro-silmarillion imagem-livro-filhoshurin imagem-livro-quedanumenor"
+            "texto-livro-contosinacabados texto-livro-silmarillion texto-livro-filhoshurin texto-livro-quedanumenor";
+            
+    }
+
+    #imagem_livro_hobbit {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_hobbit > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_sociedadeanel {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_sociedadeanel > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_duastorres {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_duastorres > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_retornorei {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_retornorei > *{
+        font-size: 0.8em;
+    }
+
+    #imagem_livro_contosinacabados {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_contosinacabados > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_silmarillion {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_silmarillion > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_filhoshurin {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_filhoshurin > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_quedanumenor {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_quedanumenor > *{
+        font-size: 0.8em;
+    }    
+
+    #nomes_grupo_rodape1 > *{
+        font-size: 0.8em;
+        margin-right: 5px;
+    }
+    #nomes_grupo_rodape2 > *{
+        font-size: 0.8em;
+    }
+    #rights > *{
+        font-size: 0.6em;
+        }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: smaller;
+    }
+
+    .livros1 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-hobbit imagem-livro-sociedadeanel imagem-livro-duastorres imagem-livro-retornorei"
+            "texto-livro-hobbit texto-livro-sociedadeanel texto-livro-duastorres texto-livro-retornorei";
+    }
+
+    .livros2 {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagem-livro-contosinacabados imagem-livro-silmarillion imagem-livro-filhoshurin imagem-livro-quedanumenor"
+            "texto-livro-contosinacabados texto-livro-silmarillion texto-livro-filhoshurin texto-livro-quedanumenor";
+    }
+    
+    .texto {
+        font-size: 0.1em;
+    }
+
+    #imagem_arvore_topo {
+        height: 10%;
+    }
+
+    #imagem_livro_hobbit {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_hobbit > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_sociedadeanel {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_sociedadeanel > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_duastorres {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_duastorres > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_retornorei {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_retornorei > *{
+        font-size: 0.8em;
+    }
+
+    #imagem_livro_contosinacabados {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_contosinacabados > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_silmarillion {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_silmarillion > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_filhoshurin {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_filhoshurin > *{
+        font-size: 0.8em;
+    }
+    
+    #imagem_livro_quedanumenor {
+        width: 100px;
+        height: 155px;
+    }
+    
+    #texto_livro_quedanumenor > *{
+        font-size: 0.8em;
+    }
+
+    
+
+    #nomes_grupo_rodape1 > *{
+        font-size: 0.8em;
+        margin-right: 5px;
+    }
+    #nomes_grupo_rodape2 > *{
+        font-size: 0.8em;
+    }
+    #rights > *{
+        font-size: 0.6em;
+        }
 }
