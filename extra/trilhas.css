@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -173,4 +173,118 @@ header {
     color: #FFF3CA;
     font-size: 18px;
     margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarMenu {
+        height: 100px;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .navLogo {
+        width: 0%;
+        display: none;
+    }
+
+    .navbarMenu a {
+        padding: 10px;
+    }
+
+    .drop-content {
+        width: 80px;
+    }
+
+    .drop-content a {
+        padding: 15px;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .background {
+        height: 300px;
+    }
+
+    .header, .playlists {
+        font-size: 14px;
+        height: fit-content;
+        padding: 40px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .sobre img {
+        margin: 0;
+        width: 350px;
+        height: 350px;
+    }
+
+    .trilhas1, .trilhas2 {
+        background-color: #FFFBF0;
+        height: fit-content;
+    }
+ 
+    .trilhas1 a, .trilhas2 a {
+        padding: 30px;
+        display: block;
+    }
+
+    .rodape, .rights {
+        font-size: 14px;
+    }
+
+    .rodape img {
+        width: 160px;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+    .navbarMenu a {
+        padding: 20px;
+    }
+
+    .drop-content {
+        width: 140px;
+    }
+
+    .drop-content a {
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .background {
+        height: 400px;
+    }
+
+    .header {
+        height: fit-content;
+    }
+
+    .sobre {
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+    }
+    
+    .playlists {
+        height: fit-content;
+    }
+
+    .trilhas1, .trilhas2 {
+        background-color: #FFFBF0;
+        height: fit-content;
+    }
+ 
+    .trilhas1 a, .trilhas2 a {
+        padding: 30px;
+        display: block;
+    }
 }
