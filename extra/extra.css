@@ -87,7 +87,7 @@ header {
 
 .background {
     height: 600px;
-    background: url(/extra/extra_img/cover.jpeg) no-repeat center;
+    background: url(extra_img/cover.jpeg) no-repeat center;
     background-size: cover;
 }
 

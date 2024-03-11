@@ -86,7 +86,7 @@ header {
 
 .background {
     height: 600px;
-    background: url(/img_index/extra/background-trilha.png) no-repeat center;
+    background: url(extra_img/background-trilha.png) no-repeat center;
     background-size: cover;
 }
 
