@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -35,12 +36,16 @@ body {
     width: 100%;
 }
 
-.navbarMenu a, .logoNav {
+.navbarMenu a {
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbarMenu a, .navLogo {
     color: black;
     padding: 30px 80px;
     text-decoration: none;
-    font-family: 'KoHo', sans-serif;
-    line-height: normal;
 }
 
 .dropdown a {
@@ -82,7 +87,7 @@ header {
 
 .background {
     height: 600px;
-    background: url(/FilmesNerds/img_index/extra/cover.jpeg) no-repeat center;
+    background: url(/img_index/extra/cover.jpeg) no-repeat center;
     background-size: cover;
 }
 
@@ -93,14 +98,18 @@ header {
     font-size: 18px;
 }
 
-.texto1 h1 {
-    font-family: 'Kantumruy Pro', sans-serif;
+.texto1 h1, .texto2 h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-style: normal;
 }
 
-.texto1 p {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100;
+.texto1 p, .texto2 p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .extra {
@@ -109,10 +118,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.extra div h3 {
-    font-family: 'KoHo', sans-serif;;
 }
 
 .extra div img {
@@ -128,10 +133,18 @@ header {
     border-radius: 20px;
 }
 
+.extra h3 {
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .extra p {
-    margin-bottom: 50px;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .botao {
@@ -140,8 +153,10 @@ header {
     color: black;
     padding: 10px 50px;
     border-radius: 10px;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100 bold;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .botao:hover {
@@ -154,16 +169,6 @@ header {
     padding: 80px;
     text-align: center;
     font-size: 18px;
-}
-
-.texto2 h2 {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 700;
-}
-
-.texto2 p {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100;
 }
 
 .imagens {
@@ -180,6 +185,9 @@ header {
 .rodape {
     background-color: #21251F;
     padding: 50px;
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .containerFooter {
@@ -192,7 +200,6 @@ header {
 }
 
 .lista {
-    font-family: 'KoHo', sans-serif;
     direction: rtl;
     color: #FFF3CA;
 }
@@ -202,7 +209,6 @@ header {
 }
 
 .rights {
-    font-family: "Kantumruy Pro", sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
     font-size: 18px;

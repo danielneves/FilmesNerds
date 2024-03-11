@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -25,16 +25,6 @@ body {
     background-color: #21251F;
 }
 
-h1, h2 {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 700;
-}
-
-p {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 100;
-}
-
 .navbarMenu {
     display: flex;
     justify-content: center;
@@ -46,11 +36,15 @@ p {
 }
 
 .navbarMenu a {
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbarMenu a, .navLogo {
     color: black;
     padding: 30px 80px;
     text-decoration: none;
-    font-family: 'KoHo', sans-serif;
-    line-height: normal;
 }
 
 .dropdown a {
@@ -92,7 +86,7 @@ header {
 
 .background {
     height: 600px;
-    background: url(/FilmesNerds/img_index/extra/background-mapas.jpeg) no-repeat center;
+    background: url(/img_index/extra/background-mapas.jpeg) no-repeat center;
     background-size: cover;
 }
 
@@ -101,6 +95,27 @@ header {
     padding: 80px;
     text-align: center;
     font-size: 18px;
+}
+
+.header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header p, .mapas1 p, .mapas2 p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mapas1 h2, .mapas2 h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 section {
@@ -128,9 +143,13 @@ section {
     margin-left: 50px;
 }
 
+
 .rodape {
     background-color: #21251F;
     padding: 50px;
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .containerFooter {
@@ -143,7 +162,6 @@ section {
 }
 
 .lista {
-    font-family: 'KoHo', sans-serif;
     direction: rtl;
     color: #FFF3CA;
 }
@@ -153,7 +171,6 @@ section {
 }
 
 .rights {
-    font-family: "Kantumruy Pro", sans-serif;
     background-color: #21251F;
     color: #FFF3CA;
     font-size: 18px;
